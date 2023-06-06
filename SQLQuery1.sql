@@ -1,0 +1,19 @@
+create database [DangNhap_NhanVien]
+use [DangNhap_NhanVien]
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[NhanVien](
+    [MaNV] [int] IDENTITY(1,1) NOT NULL,
+    [TaiKhoan] [nvarchar](50) NOT NULL,
+    [MatKhau] [nvarchar](50) NOT NULL,
+    [IDPer] [int] NOT NULL,
+ CONSTRAINT [PK_NhanVien] PRIMARY KEY CLUSTERED 
+(
+    [MaNV] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+ 
+GO
+
